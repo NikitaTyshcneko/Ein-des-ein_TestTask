@@ -1,8 +1,10 @@
 from fastapi import FastAPI
 from src.router import router_images
 from fastapi.middleware.cors import CORSMiddleware
+from mangum import Mangum
 
 app = FastAPI()
+handler = Mangum(app)
 
 app.include_router(router_images)
 
