@@ -1,0 +1,12 @@
+.content-wrapper {
+  padding: 25px 32px;
+  margin: 0 auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 48px;
+  }
+}
